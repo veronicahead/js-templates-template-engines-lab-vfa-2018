@@ -25,6 +25,12 @@
     <script id="comments-template" type="text/x-lodash-template">
       <div id="comments">
       </div>
+        <form onsubmit="postComment();return false;">
+          Name: <input type="text" id="commenterName"><br>
+          Comment: <input type="textarea" id="commentText"><br>
+          <input type="submit">
+        </form>
+      </div>      
     </script>
     
       
@@ -35,14 +41,7 @@
         Author: <input type="text" id="author"><br>
         <input type="submit">
       </form>
-      <!-- Comment lodash template that posts comments based on form submission -->
-      <div id= "comments-template">
-        <form onsubmit="postComment();return false;">
-          Name: <input type="text" id="commenterName"><br>
-          Comment: <input type="textarea" id="commentText"><br>
-          <input type="submit">
-        </form>
-      </div>
+
 
     </main>
     <script src="node_modules/lodash/lodash.min.js"></script>
