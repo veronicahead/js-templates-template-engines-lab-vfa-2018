@@ -5,7 +5,18 @@
   </head>
   <body>
     <main>
-      <div id= "comments-template"></div>
+      <form id="post-form" onsubmit="createPost()">
+        Title: <input type="text" id="title"><br>
+        Body: <input type="text" id="body"><br>
+        Author: <input type="text" id="author"><br>
+      </form>
+      <div id= "comments-template">
+        <form onsubmit="postComment();return false;">
+          Name: <input type="text" id="commenterName"><br>
+          Comment: <input type="textarea" id="commentText"><br>
+          <input type="submit">
+        </form>
+      </div>
 
     </main>
     <script src="node_modules/lodash/lodash.min.js"></script>
