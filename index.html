@@ -5,12 +5,24 @@
   </head>
   <body>
     <main>
+      <!--Lodash template for blog post page with sidebar element and post element-->
+      <div id="page-template">
+        <sidebar>
+          
+        </sidebar>
+        <post>
+          
+        </post>
+      </div>
+      
+      <!-- Post form to create new posts -->
       <form id="post-form" onsubmit="createPost()">
         Title: <input type="text" id="title"><br>
         Body: <input type="text" id="body"><br>
         Author: <input type="text" id="author"><br>
         <input type="submit">
       </form>
+      <!-- Comment lodash template that posts comments based on form submission -->
       <div id= "comments-template">
         <form onsubmit="postComment();return false;">
           Name: <input type="text" id="commenterName"><br>
